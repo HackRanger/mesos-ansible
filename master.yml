@@ -5,7 +5,7 @@
   pre_tasks:
      - shell: echo 'I":" Beginning to configure web server..'
   roles:
-     - mesos
+     - mesos-master
   post_tasks:
      - shell: echo 'I":" Done configuring nginx web server...'
 
