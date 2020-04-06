@@ -3,10 +3,10 @@
   remote_user: vagrant
   sudo: yes
   pre_tasks:
-     - shell: echo 'I":" Beginning to configure web server..'
+     - shell: echo 'I":" Beginning to configure master server..'
   roles:
      - mesos-master
   post_tasks:
-     - shell: echo 'I":" Done configuring nginx web server...'
+     - shell: echo 'I":" Done configuring nginx master server...'
 
 
