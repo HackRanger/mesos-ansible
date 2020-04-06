@@ -1,0 +1,10 @@
+#customhosts
+#inventory configs for my cluster
+[mesos-slave]
+192.168.61.11 ansible_ssh_user=vagrant 
+
+[mesos-master]
+192.168.61.12 ansible_ssh_user=vagrant
+
+[zookeeper]
+192.168.61.13 ansible_ssh_user=vagrant

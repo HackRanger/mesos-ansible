@@ -1,0 +1,6 @@
+---
+ - name: configure which zk to use
+   template: src=zk.j2 dest=/etc/mesos/zk
+ - name: configure quorum value
+   template: src=quorum.j2 dest=/etc/mesos-master/quorum
+    - restart mesos-master service

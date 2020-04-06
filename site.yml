@@ -1,0 +1,5 @@
+---
+# This is a sitewide playbook 
+- include: master.yml
+- include: slave.yml
+

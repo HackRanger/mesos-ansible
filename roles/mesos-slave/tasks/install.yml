@@ -1,0 +1,10 @@
+---
+  - name: Add Mesosphere repo in RedHat 7
+      yum_repository:
+        name: Mesos
+        description: Mesos repo
+        baseurl: https://serviceaccountiota:AP6wtTuaRR2w4JEQaWNeeg3KpAr3kTmgwJcHN9@af.scania.com/artifactory/mesos-rpm-local/
+        gpgcheck: false
+        become: true
+  - name: Install mesos package in RedHat 7
+    yum: name=mesos update_cache=yes 
